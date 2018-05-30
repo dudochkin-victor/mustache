@@ -8,5 +8,4 @@ environment:
   sdk: '>=2.0.0-dev.1.2 <2.0.0'  
 
 dev_dependencies:
-  build_test: ^0.10.2
   test: any

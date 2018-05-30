@@ -1,6 +1,6 @@
 library mustache_test;
 
-import 'package:unittest/unittest.dart';
+import 'package:test/test.dart';
 import 'package:mustache/mustache.dart';
 
 const MISMATCHED_TAG = 'Mismatched tag';
@@ -549,12 +549,12 @@ Empty.
     });
 
     //FIXME
-    skip_test('inverted sections truthy', () {
-      var template = '<{{^lambda}}{{static}}{{/lambda}}>';
-      var values = {'lambda': (_) => false, 'static': 'static'};
-      var output = '<>';
-      expect(parse(template).renderString(values), equals(output));
-    });
+//    skip_test('inverted sections truthy', () {
+//      var template = '<{{^lambda}}{{static}}{{/lambda}}>';
+//      var values = {'lambda': (_) => false, 'static': 'static'};
+//      var output = '<>';
+//      expect(parse(template).renderString(values), equals(output));
+//    });
 
     test("seth's use case", () {
       var template = '<{{#markdown}}{{content}}{{/markdown}}>';
